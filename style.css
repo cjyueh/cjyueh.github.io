@@ -31,6 +31,16 @@ html, body, #wrapper, .container-table {
 	font-size: 10em;
 }
 
+#home-list {
+	padding: 0;
+}
+
+.home-list-item {
+	color: #ED208A;
+	display: inline-block;
+	margin: -1em .5em 0 .5em;
+}
+
 #about {
 	background: white no-repeat center center fixed;
 	-webkit-background-size: cover;
