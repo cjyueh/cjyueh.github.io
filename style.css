@@ -38,7 +38,8 @@ html, body, #wrapper, .container-table {
 .home-list-item {
 	color: #ED208A;
 	display: inline-block;
-	margin: -1em .5em 0 .5em;
+	letter-spacing: .1em;
+	margin: -1em .2em 0 .2em;
 }
 
 #about {
