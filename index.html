@@ -1,10 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 	<title>Christina Yueh</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="sidebar.js"></script>
 </head>
 <body>
-	<h1>Coming Soon</h1>
+	<div id="wrapper">
+		<header class="header">
+			<nav class="header-nav">
+				<div class="nav-btns">
+					<button id="hamburger" class="hamburger">Slide Left</button>
+				</div>
+			</nav>
+		</header><!-- /header -->
+
+		<!-- <main class="content"> -->
+		<div class="container container-table" id="home-photo">
+			<div class="row vertical-center-row">
+				<div class="text-center">
+					<h1 id="" ="home-title">christina yueh</h1>
+					<h2 id="home-desc">WEB DEVELOPER  |  DESIGNER  |  YOGI  |  WORLD TRAVELER</h2>
+				</div>
+			</div>
+		</div><!-- /container -->
+		<!-- </main> --> <!-- /content -->
+
+		<!-- <footer class="footer">
+			<div class="container">
+				<small>&copy; 2016, christina yueh</small>
+			</div>
+		</footer> --> <!-- /footer -->
+	</div><!-- wrapper -->
+
+<nav id="sidebar--slide-left" class="sidebar sidebar--slide-left">
+  <button class="sidebar__close">&larr; Close Menu</button>
+  <ul class="sidebar__items">
+    <li class="sidebar__item"><a href="#" class="sidebar__link">Home</a></li>
+    <li class="sidebar__item"><a href="#" class="sidebar__link">About</a></li>
+    <li class="sidebar__item"><a href="#" class="sidebar__link">Portfolio</a></li>
+    <li class="sidebar__item"><a href="#" class="sidebar__link">Resume</a></li>
+    <li class="sidebar__item"><a href="#" class="sidebar__link">Contact</a></li>
+  </ul>
+</nav><!-- /sidebar slide-left -->
+
+<div id="mask" class="mask"></div><!-- /mask -->
+
+	<script type="text/javascript">
+		var slideLeft = new Menu({
+			wrapper: '#wrapper',
+			type: 'slide-left',
+			menuOpenerClass: '.hamburger',
+			maskId: '#mask'
+		});
+		var slideLeftBtn = document.querySelector('#hamburger');
+  
+		slideLeftBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			slideLeft.open();
+		});
+	</script>
 </body>
 </html>
