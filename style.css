@@ -10,6 +10,10 @@ a:link, a:hover, a:active, a:visited {
 
 a:hover {
 	color: #ED208A;
+	text-decoration: none;
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
 }
 
 /*---------- HOME PAGE CENTERING ---------*/
@@ -76,6 +80,36 @@ section#portfolio {
 	min-height: 100%;
 	width: 100%;
 }
+
+.thumbnail {
+	background-color: #383838;
+	border: 0;
+	margin-top: 2em;
+}
+
+a.caption-item {
+	color: #CCCCCC;
+	display: inline-block;
+	padding: 0 .5em;
+}
+
+a.caption-item:hover {
+	color: #ED208A;
+	text-decoration: none;
+}
+
+.github {
+	font-size: 2em;
+}
+
+.caption-list {
+	color: #CCCCCC;
+	list-style: none;
+}
+
+.caption-list-item {
+	padding: .5em 0;
+}
 /*----------------------------------------*/
 /*------------- CONTACT PAGE ------------*/
 section#contact {
@@ -101,8 +135,8 @@ section#contact {
 	-webkit-transform: scale(1.1, 1.1);
 	-moz-transform: scale(1.1, 1.1);
 }
-
 /*----------------------------------------*/
+
 .sidebar {
   position: fixed;
   z-index: 200;
@@ -146,7 +180,7 @@ body.has-active-menu {
   overflow: hidden;
   width: 0;
   height: 0;
-  background-color: #000;
+  background-color: #383838;
   opacity: 0;
   transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
 }
@@ -186,6 +220,10 @@ body.has-active-menu {
   display: block;
   padding: 12px 24px;
   color: #383838;
+}
+
+.sidebar__link:hover {
+	color: #ED208A;
 }
 
 .sidebar--slide-left .sidebar__close {
