@@ -16,6 +16,11 @@ a:hover {
 	-moz-transform: scale(1.1, 1.1);
 }
 
+#hamburger {
+	color: #ED208A;
+	font-size: 3em;
+}
+
 /*---------- HOME PAGE CENTERING ---------*/
 .container-table {
 	display: table;
@@ -59,10 +64,6 @@ a:hover {
 	font-family: 'Suranna', serif;
 	font-size: 7em;
 }
-
-.section-content {
-	color: #757575;
-}
 /*----------------------------------------*/
 /*--------------- ABOUT PAGE --------------*/
 section#about {
@@ -70,6 +71,18 @@ section#about {
 	margin-top: 0;
 	min-height: 100%;
 	width: 100%;
+}
+
+.about-content {
+	margin-top: 2em;
+}
+
+#about-pic {
+	border: .25em solid #ED208A;
+	position: absolute;
+	margin-top: 2em;
+	max-width: 60%;
+	right: 0;
 }
 /*----------------------------------------*/
 /*------------- PORTFOLIO PAGE ------------*/
@@ -147,14 +160,16 @@ section#contact {
 .sidebar__items {
 	font-family: 'Suranna', serif;
 	font-size: 3em;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .sidebar__close {
-  background-color: #3184a1;
-  font-size: 14px;
+  background-color: #FFF;
+  color: #383838;
+	font-family: 'Suranna', serif;
+	font-size: 2em;
   border: none;
   box-shadow: none;
   border-radius: none;
@@ -162,6 +177,10 @@ section#contact {
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+}
+
+.sidebar-close:hover {
+	color: #ED208A;
 }
 
 .sidebar__close:focus {

@@ -18,7 +18,7 @@
 		<header class="row">
 			<nav class="navbar navbar-fixed-top">
 				<div class="fixed">
-					<button type="button" id="hamburger" class="btn btn-default glyphicon glyphicon-align-justify btn-menu toggle"></button>
+					<a type="button" id="hamburger"><i class="fa fa-code" aria-hidden="true"></i></a>
 				</div>
 			</nav>
 		</header>
@@ -50,9 +50,14 @@
 		<section class="container" id="about">
 			<div class="row">
 				<h1 class="text-center section-title">hello world!</h1>
-				<div class="col-md-4 col-md-offset-4 ">
-					<h4 class="section-content">I am a full-stack web developer currently based in San Francisco, CA. In my previous life, I was an architect, where I became fascinated with the interplay of design and functionality. This concept greatly influences my approach to web development as I aim to deliver an experience to users that is both functional and meaningful.</h4>
-					<h4 class="section-content">When I'm away from my computer, I enjoy practicing / teaching yoga and exploring places around the globe.</h4>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1">
+					<img id="about-pic" src="images/cheek-ear.jpg" alt="" />
+				</div>
+				<div class="col-md-6">
+					<h4 class="about-content">I am a full-stack web developer currently based in San Francisco, CA. In my previous life, I was an architect, where I became fascinated with the interplay of design and functionality. This concept greatly influences my approach to web development as I aim to deliver an experience to users that is both functional and meaningful.</h4>
+					<h4 class="about-content">When I'm away from my computer, I enjoy practicing / teaching yoga and exploring places around the globe.</h4>
 				</div>
 			</div>
 		</section>
@@ -120,7 +125,7 @@
 					<ul id="contact-list">
 						<li class="contact-list-item"><a href="https://www.linkedin.com/in/cjyueh"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 						<li class="contact-list-item"><a href="https://github.com/cjyueh"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-						<li class="contact-list-item"><a href="mailto:cjyueh@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+						<li class="contact-list-item"><a href="mailto:cjyueh@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -134,7 +139,6 @@
 	</div><!-- wrapper -->
 
 <nav id="sidebar--slide-left" class="sidebar sidebar--slide-left container container-table">
-	<button class="sidebar__close">&larr; Close Menu</button>
 	<div class="row vertical-center-row">
 		<div class="text-center col-xs-12">
 			<ul class="sidebar__items">
@@ -143,6 +147,7 @@
 				<li class="sidebar__item"><a href="#portfolio" class="sidebar__link">Portfolio</a></li>
 				<li class="sidebar__item"><a href="#contact" class="sidebar__link">Contact</a></li>
 			</ul>
+			<a class="sidebar__close">&larr; Close Menu</a>
 		</div>
 	</div>
 </nav><!-- /sidebar slide-left -->
