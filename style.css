@@ -63,6 +63,7 @@ a:hover {
 .section-title {
 	font-family: 'Suranna', serif;
 	font-size: 7em;
+	margin-bottom: .25em;
 }
 /*----------------------------------------*/
 /*--------------- ABOUT PAGE --------------*/
@@ -74,15 +75,12 @@ section#about {
 }
 
 .about-content {
-	margin-top: 2em;
+	margin-top: 0;
 }
 
 #about-pic {
 	border: .25em solid #ED208A;
-	position: absolute;
-	margin-top: 2em;
-	max-width: 60%;
-	right: 0;
+	max-width: 100%;
 }
 /*----------------------------------------*/
 /*------------- PORTFOLIO PAGE ------------*/
@@ -97,7 +95,6 @@ section#portfolio {
 .thumbnail {
 	background-color: #383838;
 	border: 0;
-	margin-top: 2em;
 }
 
 a.caption-item {
@@ -118,6 +115,7 @@ a.caption-item:hover {
 .caption-list {
 	color: #CCCCCC;
 	list-style: none;
+	padding-left: 0;
 }
 
 .caption-list-item {
