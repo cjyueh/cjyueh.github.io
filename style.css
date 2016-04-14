@@ -93,6 +93,33 @@ section#about {
 	margin-bottom: 1em;
 }
 /*----------------------------------------*/
+/*-------------- SKILLS PAGE -------------*/
+section#skills {
+	background-color: #CCCCCC;
+	margin-top: 0;
+	min-height: 100%;
+	width: 100%;
+}
+
+.thumbnail-skills {
+	background-color: white;
+	border: none;
+	border-radius: 0;
+	height: 283px;
+	min-width: 200px;
+}
+
+.thumbnail-skills-last {
+	margin-bottom: 3em;
+}
+
+.skills-list {
+	color: #383838;
+	font-size: 1.1em;
+	list-style: none;
+	padding-left: 0;
+}
+/*----------------------------------------*/
 /*------------- PORTFOLIO PAGE ------------*/
 section#portfolio {
 	background-color: #383838;
@@ -102,7 +129,7 @@ section#portfolio {
 	width: 100%;
 }
 
-.thumbnail {
+.thumbnail-portfolio {
 	background-color: #383838;
 	border: 0;
 }
