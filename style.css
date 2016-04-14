@@ -78,11 +78,7 @@ a:hover {
 	and (-webkit-min-device-pixel-ratio: 2)
 	and (orientation: portrait) {
 		#home {
-			background: url("images/PDX.jpg") no-repeat center center fixed;
-			-webkit-background-size: auto 100%;
-			-moz-background-size: auto 100%;
-			-o-background-size: auto 100%;
-			background-size: auto 100%;
+			background-attachment: scroll;
 		}
 		#home-title {
 			font-size: 5em;
