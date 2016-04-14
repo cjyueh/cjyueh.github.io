@@ -25,6 +25,14 @@ a:hover {
 	z-index: 100;
 }
 
+.down-arrow {
+	color: #ED208A;
+	font-size: 4em;
+	position: fixed;
+	bottom: 1%;
+	left: 50%;
+}
+
 /*---------- HOME PAGE CENTERING ---------*/
 .container-table {
 	display: table;
