@@ -79,6 +79,10 @@ a:hover {
 	and (orientation: portrait) {
 		#home {
 			background: url("images/PDX.jpg") no-repeat center center fixed;
+			-webkit-background-size: contain;
+			-moz-background-size: contain;
+			-o-background-size: contain;
+			background-size: contain;
 		}
 		#home-title {
 			font-size: 5em;
