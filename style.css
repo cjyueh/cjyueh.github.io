@@ -62,12 +62,31 @@ a:hover {
 	letter-spacing: .1em;
 	margin: -1em .2em 0 .2em;
 }
+
 /*----------------------------------------*/
 /*---------------- SECTIONS ---------------*/
 .section-title {
 	font-family: 'Suranna', serif;
 	font-size: 7em;
 	margin-bottom: .25em;
+}
+/*----------------------------------------*/
+/*-------------- MEDIA QUERY -------------*/
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 480px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) {
+		#home-title {
+			font-size: 5em;
+		}
+		.home-list-item {
+			font-size: .6em;
+			letter-spacing: 0;
+		}
+		.section-title {
+			font-size: 5em;
+		}
 }
 /*----------------------------------------*/
 /*--------------- ABOUT PAGE --------------*/
