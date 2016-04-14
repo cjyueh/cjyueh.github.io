@@ -82,9 +82,14 @@ section#about {
 	margin-top: 0;
 }
 
+#about-content-2 {
+	margin-bottom: 3em;
+}
+
 #about-pic {
 	border: .25em solid #ED208A;
 	max-width: 100%;
+	margin-bottom: 1em;
 }
 /*----------------------------------------*/
 /*------------- PORTFOLIO PAGE ------------*/
