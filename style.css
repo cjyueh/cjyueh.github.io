@@ -185,7 +185,7 @@ a.caption-item:hover {
 section#contact {
 	background-color: rgba(237, 32, 138, 0.1);
 	margin-top: 0;
-	min-height: 50%;
+	min-height: 40%;
 	width: 100%;
 }
 
@@ -206,7 +206,11 @@ section#contact {
 	-moz-transform: scale(1.1, 1.1);
 }
 /*----------------------------------------*/
-
+/*---------------- FOOTER ---------------*/
+footer {
+	background-color: rgba(237, 32, 138, 0.1);
+}
+/*----------------------------------------*/
 .sidebar {
 	position: fixed;
 	z-index: 200;
