@@ -79,10 +79,11 @@ section#about {
 }
 
 .about-content {
+	font-size: 1.1em;
 	margin-top: 0;
 }
 
-#about-content-2 {
+#about-content-last {
 	margin-bottom: 3em;
 }
 
