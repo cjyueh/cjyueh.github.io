@@ -206,36 +206,23 @@
 		</footer>
 	</div><!-- wrapper -->
 
-<nav id="sidebar--slide-left" class="sidebar sidebar--slide-left container container-table">
-	<div class="row vertical-center-row">
-		<div class="text-center col-xs-12">
-			<ul class="sidebar__items">
-				<li class="sidebar__item"><a href="#home" class="sidebar__link">Home</a></li>
-				<li class="sidebar__item"><a href="#about" class="sidebar__link">About</a></li>
-				<li class="sidebar__item"><a href="#skills" class="sidebar__link">Skills</a></li>
-				<li class="sidebar__item"><a href="#portfolio" class="sidebar__link">Portfolio</a></li>
-				<li class="sidebar__item"><a href="#contact" class="sidebar__link">Contact</a></li>
-			</ul>
-			<a class="sidebar__close"><i class="fa fa-angle-double-left" aria-hidden="true"></i> close <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+	<nav id="sidebar--slide-left" class="sidebar sidebar--slide-left container container-table">
+		<div class="row vertical-center-row">
+			<div class="text-center col-xs-12">
+				<ul class="sidebar__items">
+					<li class="sidebar__item"><a href="#home" class="sidebar__link">Home</a></li>
+					<li class="sidebar__item"><a href="#about" class="sidebar__link">About</a></li>
+					<li class="sidebar__item"><a href="#skills" class="sidebar__link">Skills</a></li>
+					<li class="sidebar__item"><a href="#portfolio" class="sidebar__link">Portfolio</a></li>
+					<li class="sidebar__item"><a href="#contact" class="sidebar__link">Contact</a></li>
+				</ul>
+				<a class="sidebar__close"><i class="fa fa-angle-double-left" aria-hidden="true"></i> close <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+			</div>
 		</div>
-	</div>
-</nav><!-- /sidebar slide-left -->
+	</nav><!-- /sidebar slide-left -->
 
-<div id="mask" class="mask"></div><!-- /mask -->
+	<div id="mask" class="mask"></div><!-- /mask -->
 
-	<script type="text/javascript">
-		var slideLeft = new Menu({
-			wrapper: '#wrapper',
-			type: 'slide-left',
-			menuOpenerClass: '.hamburger',
-			maskId: '#mask'
-		});
-		var slideLeftBtn = document.querySelector('#hamburger');
-  
-		slideLeftBtn.addEventListener('click', function(e) {
-			e.preventDefault();
-			slideLeft.open();
-		});
-	</script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

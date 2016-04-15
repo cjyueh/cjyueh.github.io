@@ -2,9 +2,7 @@
 
   'use strict';
 
-  /**
-   * Extend Object helper function.
-   */
+  // Extend Object helper function
   function extend(a, b) {
     for(var key in b) { 
       if(b.hasOwnProperty(key)) {
@@ -14,9 +12,7 @@
     return a;
   }
 
-  /**
-   * Each helper function.
-   */
+  // Each helper function
   function each(collection, callback) {
     for (var i = 0; i < collection.length; i++) {
       var item = collection[i];
@@ -24,18 +20,14 @@
     }
   }
 
-  /**
-   * Menu Constructor.
-   */
+  // Menu constructor
   function Menu(options) {
     this.options = extend({}, this.options);
     extend(this.options, options);
     this._init();
   }
 
-  /**
-   * Menu Options.
-   */
+  // Menu options
   Menu.prototype.options = {
     wrapper: '#wrapper',          // The content wrapper
     type: 'slide-left',             // The menu type
@@ -43,9 +35,7 @@
     maskId: '#mask'               // The ID of the mask
   };
 
-  /**
-   * Initialise Menu.
-   */
+  // Menu initialize function
   Menu.prototype._init = function() {
     this.body = document.body;
     this.wrapper = document.querySelector(this.options.wrapper);
@@ -56,26 +46,22 @@
     this._initEvents();
   };
 
-  /**
-   * Initialise Menu Events.
-   */
+  // Menu Events initialize function (to close menu)
   Menu.prototype._initEvents = function() {
-    // Event for clicks on the close button inside the menu.
+    // Event listener for clicks on the close button inside the menu
     this.closeBtn.addEventListener('click', function(e) {
       e.preventDefault();
       this.close();
     }.bind(this));
 
-    // Event for clicks on the mask.
+    // Event listener for clicks on the mask outside the menu
     this.mask.addEventListener('click', function(e) {
       e.preventDefault();
       this.close();
     }.bind(this));
   };
 
-  /**
-   * Open Menu.
-   */
+  // Menu Open function
   Menu.prototype.open = function() {
     this.body.classList.add('has-active-menu');
     this.wrapper.classList.add('has-' + this.options.type);
@@ -84,9 +70,7 @@
     this.disableMenuOpeners();
   };
 
-  /**
-   * Close Menu.
-   */
+  // Menu Close function
   Menu.prototype.close = function() {
     this.body.classList.remove('has-active-menu');
     this.wrapper.classList.remove('has-' + this.options.type);
@@ -95,27 +79,20 @@
     this.enableMenuOpeners();
   };
 
-  /**
-   * Disable Menu Openers.
-   */
+  // Menu Disable Openers function
   Menu.prototype.disableMenuOpeners = function() {
     each(this.menuOpeners, function(item) {
       item.disabled = true;
     });
   };
 
-  /**
-   * Enable Menu Openers.
-   */
+  // Menu Enable Openers function
   Menu.prototype.enableMenuOpeners = function() {
     each(this.menuOpeners, function(item) {
       item.disabled = false;
     });
   };
 
-  /**
-   * Add to global namespace.
-   */
   window.Menu = Menu;
 
 })(window);
