@@ -228,10 +228,16 @@ footer {
 
 #top-arrow {
 	border: 3px solid;
-	padding: 0 .3em;
+	padding: .1em .3em;
 	border-radius: 1em;
 	font-size: 3em;
 	bottom: 0;
+}
+
+#top-arrow:hover {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
 }
 /*----------------------------------------*/
 .sidebar {
