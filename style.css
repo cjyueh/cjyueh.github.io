@@ -93,7 +93,7 @@ section#about {
 
 #about-pic {
 	/*border: .25em solid #ED208A;*/
-	color: #30baa3;
+	border: .25em solid #30baa3;
 	max-width: 100%;
 	margin-bottom: 1em;
 }
