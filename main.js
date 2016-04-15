@@ -10,3 +10,4 @@ slideLeftBtn.addEventListener('click', function(e) {
   e.preventDefault();
   slideLeft.open();
 });
+
