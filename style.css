@@ -71,27 +71,6 @@ a:hover {
 	margin-bottom: .25em;
 }
 /*----------------------------------------*/
-/*-------------- MEDIA QUERY -------------*/
-@media only screen 
-	and (min-device-width: 320px) 
-	and (max-device-width: 480px)
-	and (-webkit-min-device-pixel-ratio: 2)
-	and (orientation: portrait) {
-		#home {
-			background-attachment: scroll;
-		}
-		#home-title {
-			font-size: 5em;
-		}
-		.home-list-item {
-			font-size: .6em;
-			letter-spacing: 0;
-		}
-		.section-title {
-			font-size: 5em;
-		}
-}
-/*----------------------------------------*/
 /*--------------- ABOUT PAGE --------------*/
 section#about {
 	background-color: white;
@@ -144,6 +123,30 @@ section#skills {
 	font-size: 1.1em;
 	list-style: none;
 	padding-left: 0;
+}
+/*----------------------------------------*/
+/*-------------- MEDIA QUERY -------------*/
+@media only screen 
+	and (min-device-width: 320px) 
+	and (max-device-width: 480px)
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) {
+		#home {
+			background-attachment: scroll;
+		}
+		#home-title {
+			font-size: 5em;
+		}
+		.home-list-item {
+			font-size: .6em;
+			letter-spacing: 0;
+		}
+		.section-title {
+			font-size: 5em;
+		}
+		section#skills {
+			background-attachment: scroll;
+		}
 }
 /*----------------------------------------*/
 /*------------- PORTFOLIO PAGE ------------*/
