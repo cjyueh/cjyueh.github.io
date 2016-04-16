@@ -58,16 +58,15 @@ a:hover {
 
 #home-list {
 	padding: 0;
-	/*background-color: rgba(255, 255, 255, .5);*/
+	background-color: rgba(255, 255, 255, .35);
 }
 
 .home-list-item {
 	/*color: #ED208A;*/
 	color: #30baa3;
 	display: inline-block;
-	letter-spacing: .1em;
+	letter-spacing: .075em;
 	margin: -1em .2em 0 .2em;
-	text-shadow: 0 0 15px white;
 }
 
 /*----------------------------------------*/
@@ -213,7 +212,7 @@ section#contact {
 }
 
 #contact-title {
-	color: #CCCCCC;
+	color: #DDDDDD;
 }
 
 #contact-list {
@@ -227,7 +226,7 @@ section#contact {
 }
 
 .contact-list-item-icon {
-	color: #CCCCCC;
+	color: #DDDDDD;
 }
 
 .contact-list-item-icon:hover {
@@ -242,11 +241,11 @@ section#contact {
 footer {
 	/*background-color: rgba(237, 32, 138, 0.1);*/
 	background-color: #30baa3;
-	color: #CCCCCC;
+	color: #DDDDDD;
 }
 
 #top-arrow {
-	color: #CCCCCC;
+	color: #DDDDDD;
 	border: 3px solid;
 	padding: .1em .3em;
 	border-radius: 1em;
