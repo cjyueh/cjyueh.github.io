@@ -1,11 +1,13 @@
 html, body, #wrapper, .container-table {
-	color: #383838;
+	/*color: #383838;*/
+	color: #696969;
 	font-family: 'Lato', sans-serif;
 	height: 100%;
 }
 
 a:link, a:hover, a:active, a:visited {
-	color: #383838;
+	/*color: #383838;*/
+	color: #696969;
 }
 
 a:hover {
@@ -39,7 +41,7 @@ a:hover {
 /*----------------------------------------*/
 /*--------------- HOME PAGE --------------*/
 #home {
-	background: url("images/PDX.jpg") no-repeat center center fixed;
+	background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)), url("images/PDX.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -56,6 +58,7 @@ a:hover {
 
 #home-list {
 	padding: 0;
+	/*background-color: rgba(255, 255, 255, .5);*/
 }
 
 .home-list-item {
@@ -64,6 +67,7 @@ a:hover {
 	display: inline-block;
 	letter-spacing: .1em;
 	margin: -1em .2em 0 .2em;
+	text-shadow: 0 0 15px white;
 }
 
 /*----------------------------------------*/
@@ -93,7 +97,6 @@ section#about {
 
 #about-pic {
 	/*border: .25em solid #ED208A;*/
-	border: .25em solid #30baa3;
 	max-width: 100%;
 	margin-bottom: 1em;
 }
@@ -118,12 +121,17 @@ section#skills {
 	min-width: 200px;
 }
 
+.skills-list-title {
+	color: #696969;
+}
+
 .thumbnail-skills-last {
 	margin-bottom: 6em;
 }
 
 .skills-list {
-	color: #383838;
+	/*color: #383838;*/
+	color: #696969;
 	font-size: 1.1em;
 	list-style: none;
 	padding-left: 0;
@@ -155,7 +163,8 @@ section#skills {
 /*----------------------------------------*/
 /*------------- PORTFOLIO PAGE ------------*/
 section#portfolio {
-	background-color: #383838;
+	/*background-color: #383838;*/
+	background-color: #696969;
 	color: #CCCCCC;
 	margin-top: 0;
 	min-height: 100%;
@@ -163,7 +172,8 @@ section#portfolio {
 }
 
 .thumbnail-portfolio {
-	background-color: #383838;
+	/*background-color: #383838;*/
+	background-color: #696969;
 	border: 0;
 }
 
@@ -196,7 +206,7 @@ a.caption-item:hover {
 /*------------- CONTACT PAGE ------------*/
 section#contact {
 	/*background-color: rgba(237, 32, 138, 0.1);*/
-	background-color: rgba(48, 186, 163, 0.3);
+	background-color: #30baa3;
 	margin-top: 0;
 	min-height: 50%;
 	width: 100%;
@@ -207,11 +217,14 @@ section#contact {
 }
 
 .contact-list-item {
-	/*color: #ED208A;*/
-	color: #30baa3;
 	display: inline-block;
 	font-size: 5em;
 	margin: 0 .25em;
+}
+
+.contact-list-item-icon:hover {
+	/*color: #30baa3;*/
+	color: #858585;
 }
 
 .contact-list-item:hover {
@@ -223,7 +236,7 @@ section#contact {
 /*---------------- FOOTER ---------------*/
 footer {
 	/*background-color: rgba(237, 32, 138, 0.1);*/
-	background-color: rgba(48, 186, 163, 0.3);
+	background-color: #30baa3;
 }
 
 #top-arrow {
@@ -235,6 +248,7 @@ footer {
 }
 
 #top-arrow:hover {
+	color: #858585;
 	transform: scale(1.1, 1.1);
 	-webkit-transform: scale(1.1, 1.1);
 	-moz-transform: scale(1.1, 1.1);
@@ -257,7 +271,8 @@ footer {
 
 .sidebar__close {
 	background-color: #FFF;
-	color: #383838;
+	/*color: #383838;*/
+	color: #696969;
 	font-family: 'Suranna', serif;
 	font-size: 2.5em;
 	border: none;
@@ -290,7 +305,8 @@ body.has-active-menu {
 	overflow: hidden;
 	width: 0;
 	height: 0;
-	background-color: #383838;
+	/*background-color: #383838;*/
+	background-color: #696969;
 	opacity: 0;
 	transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
 }
@@ -329,7 +345,8 @@ body.has-active-menu {
 .sidebar--slide-left .sidebar__link {
 	display: block;
 	padding: 12px 24px;
-	color: #383838;
+	/*color: #383838;*/
+	color: #696969;
 }
 
 .sidebar__link:hover {
