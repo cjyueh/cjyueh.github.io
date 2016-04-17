@@ -58,15 +58,16 @@ a:hover {
 
 #home-list {
 	padding: 0;
-	background-color: rgba(255, 255, 255, .35);
+	/*background-color: rgba(255, 255, 255, .35);*/
 }
 
 .home-list-item {
 	/*color: #ED208A;*/
 	color: #30baa3;
 	display: inline-block;
-	letter-spacing: .075em;
+	letter-spacing: .08em;
 	margin: -1em .2em 0 .2em;
+	text-shadow: 0 0 15px white;
 }
 
 /*----------------------------------------*/
