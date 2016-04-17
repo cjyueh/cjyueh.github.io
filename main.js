@@ -6,7 +6,7 @@ var slideLeft = new Menu({
 });
 var slideLeftBtn = document.querySelector('#hamburger');
 
-slideLeftBtn.addEventListener('click', function(e) {
+slideLeftBtn.addEventListener('mouseover', function(e) {
   e.preventDefault();
   slideLeft.open();
 });
