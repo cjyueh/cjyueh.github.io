@@ -15,7 +15,7 @@ var mobile = (navigator.userAgent.match(/(iPad|iPhone|Android)/g) ? true : false
 
 $('#top-arrow').click(function() {
   if (mobile) {
-    $("html, body", parent.document).animate({ scrollTop: $("body").offset().top }, 500, "easeOutQuart");
+    $("html, body").scrollTop();
   } else {
     $("html, body").animate({ scrollTop: 0 }, 500);
   }
