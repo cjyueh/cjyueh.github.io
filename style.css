@@ -195,12 +195,12 @@ a.caption-item:hover {
 
 .caption-list {
 	color: #CCCCCC;
-	list-style: none;
-	padding-left: 0;
+	padding-top: .5em;
 }
 
-.caption-list-item {
-	padding: .5em 0;
+dt {
+	letter-spacing: .05em;
+	text-decoration: underline;
 }
 /*----------------------------------------*/
 /*------------- CONTACT PAGE ------------*/
