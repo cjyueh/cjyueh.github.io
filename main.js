@@ -11,7 +11,13 @@ slideLeftBtn.addEventListener('mouseover', function(e) {
   slideLeft.open();
 });
 
+var mobile = (navigator.userAgent.match(/(iPad|iPhone|Android)/g) ? true : false);
+
 $('#top-arrow').click(function() {
-   $("html, body").animate({ scrollTop: 0 }, 500);
+  if (mobile) {
+    $("html, body", parent.document).animate({ scrollTop: $("body").offset().top }, 500, "easeOutQuart");
+  } else {
+    $("html, body").animate({ scrollTop: 0 }, 500);
+  }
 });
 
