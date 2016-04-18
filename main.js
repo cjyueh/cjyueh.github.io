@@ -11,3 +11,7 @@ slideLeftBtn.addEventListener('mouseover', function(e) {
   slideLeft.open();
 });
 
+$('#top-arrow').click(function() {
+   $("html, body").animate({ scrollTop: 0 }, 500);
+});
+
