@@ -8,236 +8,50 @@
 	<link rel="stylesheet" href="https://indestructibletype-fonthosting.github.io/renner.css" type="text/css" charset="utf-8" />
 </head>
 <body>
-	<div id="wrapper">
-		<header class="row">
-			<a class="btn" id="hamburger">{menu}</a>
-		</header>
-
-		<main class="container container-table" id="home">
-			<div class="row vertical-center-row">
-				<div class="text-center col-xs-8 col-xs-offset-2">
-					<h1 id="home-title">christina yueh</h1>
-					<h3>
-						<ul id="home-list">
-							<li class="home-list-item">WEB DEVELOPER</li>
-							<li class="home-list-item">|</li>
-							<li class="home-list-item">DESIGNER</li>
-							<li class="home-list-item">|</li>
-							<li class="home-list-item">YOGI</li>
-							<li class="home-list-item">|</li>
-							<li class="home-list-item">GLOBE-TROTTER</li>
-						</ul>
-					</h3>
-				</div>
-			</div>
-		</main> <!-- /container -->
-
-		<section class="container" id="about">
-			<div class="row">
-				<h1 class="text-center section-title">hello world!</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-2 col-md-offset-3">
-					<img id="about-pic" src="images/cheek-ear.jpg" alt="" />
-				</div>
-				<div class="col-md-4">
-					<p class="about-content">I am a full-stack web developer currently based in San Francisco, CA. In my previous life, I was an architect, where I became fascinated with the interplay of design and functionality. This concept greatly influences my approach to web development as I aim to deliver an experience to users that is both functional and meaningful.</p>
-					<p class="about-content" id="about-content-last">When I'm away from my computer, I enjoy practicing / teaching yoga and exploring places around the globe.</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="container" id="skills">
-			<div class="row">
-				<h1 class="text-center section-title">skills</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-2 col-md-offset-2">
-					<div class="thumbnail thumbnail-skills">
-						<div class="caption">
-							<div class="text-center skills-list-title">
-								<h3>LANGUAGES</h3>
-							</div>
-							<ul class="skills-list text-center">
-								<li class="skills-list-item">HTML5</li>
-								<li class="skills-list-item">CSS3</li>
-								<li class="skills-list-item">JavaScript</li>
-								<li class="skills-list-item">Ruby</li>
-								<li class="skills-list-item">SQL</li>
-							</ul>
-						</div>
+	<div class="container">
+		<div id="splitlayout" class="splitlayout">
+			<!-- home screen -->
+			<div class="intro">
+				<div class="side side-left">
+					<div class="intro-content">
+						<div class="profile"><img src="img/profile1.jpg" alt="profile1"></div>
+						<h1><span>Toby Blue </span><span>Web Designer</span></h1>
 					</div>
+					<div class="overlay"></div>
 				</div>
-				<div class="col-md-2">
-					<div class="thumbnail thumbnail-skills">
-						<div class="caption">
-							<div class="text-center skills-list-title">
-								<h3>FRAMEWORKS</h3>
-							</div>
-							<ul class="skills-list text-center">
-								<li class="skills-list-item">Node.js</li>
-								<li class="skills-list-item">Express.js</li>
-								<li class="skills-list-item">AngularJS</li>
-								<li class="skills-list-item">Sinatra</li>
-								<li class="skills-list-item">Rails</li>
-							</ul>
-						</div>
+				<div class="side side-right">
+					<div class="intro-content">
+						<div class="profile"><img src="img/profile2.jpg" alt="profile2"></div>
+						<h1><span>Amy White </span><span>Web Developer</span></h1>
 					</div>
+					<div class="overlay"></div>
 				</div>
-				<div class="col-md-2">
-					<div class="thumbnail thumbnail-skills">
-						<div class="caption">
-							<div class="text-center skills-list-title">
-								<h3>DATABASE TOOLS</h3>
-							</div>
-							<ul class="skills-list text-center">
-								<li class="skills-list-item">MongoDB</li>
-								<li class="skills-list-item">Mongoose.js</li>
-								<li class="skills-list-item">PostreSQL</li>
-								<li class="skills-list-item">ActiveRecord</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="thumbnail thumbnail-skills thumbnail-skills-last">
-						<div class="caption">
-							<div class="text-center skills-list-title">
-								<h3>OTHER</h3>
-							</div>
-							<ul class="skills-list text-center">
-								<li class="skills-list-item">Bootstrap</li>
-								<li class="skills-list-item">jQuery</li>
-								<li class="skills-list-item">Git/GitHub</li>
-								<li class="skills-list-item">Heroku</li>
-								<li class="skills-list-item">Adobe Creative Suite</li>
-								<li class="skills-list-item">Autodesk ACAD & Revit</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			</div><!-- /intro -->
 
-		<section class="container" id="portfolio">
-			<div class="row">
-				<h1 class="text-center section-title">portfolio</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="thumbnail thumbnail-portfolio">
-						<img src="images/noodlelove-mbp-outline.png" />
-						<div class="caption">
-							<div class="text-center">
-								<a class="caption-item" href="http://noodlelove.heroku.com/" target="_blank"><h3>noodlelove</h3></a>
-								<a class="caption-item github" href="https://github.com/cjyueh/NoodleLoveApp" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-							</div>
-							<div class="caption-list">
-								<p class="caption-list-item">An interactive, responsive web application for fans of noodles and pasta</p>
-								<dl class="caption-list-item">
-									<dt>Role</dt>
-									<dd>Full-stack Web Developer</dd>
-								</dl>
-								<dl class="caption-list-item">
-									<dt>Technologies Used</dt>
-									<dd>HTML, CSS/Bootstrap, Ruby on Rails, PostgreSQL, and BCrypt</dd>
-								</dl>
-								<dl class="caption-list-item">
-									<dt>Guest Log-in</dt>
-									<dd>email: hi@hihi.com, password: password123</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail thumbnail-portfolio">
-						<img src="images/hca-mbp-outline.png" />
-						<div class="caption">
-							<div class="text-center">
-								<a class="caption-item" href="http://home-court-advantage.herokuapp.com/" target="_blank"><h3>Home Court Advantage</h3></a>
-								<a class="caption-item github" href="https://github.com/cjyueh/HomeCourtAdvApp" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-							</div>
-							<div class="caption-list">
-								<p class="caption-list-item">A responsive web application for helping relocated or visiting sports fans find bars that are showing games of their favorite home teams.</p>
-								<dl class="caption-list-item">
-									<dt>Role</dt>
-									<dd>Full-stack Web Developer with a group of two other developers - Pair-programmed to set up MVC relationships and implement features for users to securely login, edit/delete their profiles, and favorite/unfavorite a sports team. Also responsible for UI design.</dd>
-								</dl>
-								<dl class="caption-list-item">
-									<dt>Technologies Used</dt>
-									<dd>HTML/Handlebars.js, CSS/Bootstrap, Google Maps API, jQuery, Node.js, Express.js, MongoDB with Mongoose.js, and Passport with Google and Facebook OAuth</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="thumbnail thumbnail-portfolio">
-						<img src="images/dot-to-dot-mbp-outline.png" />
-						<div class="caption">
-							<div class="text-center">
-								<a class="caption-item" href="http://dot-to-dot.bitballoon.com/" target="_blank"><h3>dot-to-dot</h3></a>
-								<a class="caption-item github" href="https://github.com/cjyueh/Dot-to-Dot" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-							</div>
-							<div class="caption-list">
-								<p class="caption-list-item">A connect-the-dots web browser game</p>
-								<dl class="caption-list-item">
-									<dt>Role</dt>
-									<dd>Front-end Web Developer</dd>
-								</dl>
-								<dl class="caption-list-item">
-									<dt>Technologies Used</dt>
-									<dd>HTML, CSS, JavaScript/jQuery</dd>
-								</dl>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			<!-- yoga screen -->
+			<div class="page page-right page-large">
+				<div class="page-inner">
+					<section>
+						<!-- content -->
+					</section>
+					<section>
+						<!-- content -->
+					</section>
+					<!-- ... -->
+				</div><!-- /page-inner -->
+			</div><!-- /page-right -->
 
-		<section class="container" id="contact">
-			<div class="row">
-				<h1 class="text-center section-title" id="contact-title">contact</h1>
-				<div class="text-center">
-					<ul id="contact-list">
-						<li class="contact-list-item"><a href="https://www.linkedin.com/in/cjyueh" target="_blank"><i class="fa fa-linkedin-square contact-list-item-icon" aria-hidden="true"></i></a></li>
-						<li class="contact-list-item"><a href="https://github.com/cjyueh" target="_blank"><i class="fa fa-github-square contact-list-item-icon" aria-hidden="true"></i></a></li>
-						<li class="contact-list-item"><a href="mailto:cjyueh@gmail.com"><i class="fa fa-envelope-square contact-list-item-icon" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
+			<!-- UX screen -->
+			<div class="page page-left page-fill">
+				<div class="page-inner">
+					<!-- ... -->
+				</div><!-- /page-inner -->
+			</div><!-- /page-left -->
+			<a href="#" class="back back-right" title="back to intro">→</a>
+			<a href="#" class="back back-left" title="back to intro">←</a>
 
-		<footer class="footer text-center">
-			<div class="container">
-				<div class="row text-center">
-					<i id="top-arrow" class="fa fa-angle-double-up" aria-hidden="true"></i>
-				</div>
-				<div class="row">
-					<h5>&copy; 2016 christina yueh</h5>
-				</div>
-			</div>
-		</footer>
-	</div><!-- wrapper -->
-
-	<nav id="sidebar--slide-left" class="sidebar sidebar--slide-left container container-table">
-		<div class="row vertical-center-row">
-			<div class="text-center col-xs-12">
-				<ul class="sidebar__items">
-					<li class="sidebar__item"><a href="#home" class="sidebar__link">Home</a></li>
-					<li class="sidebar__item"><a href="#about" class="sidebar__link">About</a></li>
-					<li class="sidebar__item"><a href="#skills" class="sidebar__link">Skills</a></li>
-					<li class="sidebar__item"><a href="#portfolio" class="sidebar__link">Portfolio</a></li>
-					<li class="sidebar__item"><a href="#contact" class="sidebar__link">Contact</a></li>
-				</ul>
-				<a class="sidebar__close"><i class="fa fa-angle-double-left" aria-hidden="true"></i> close <i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-			</div>
-		</div>
-	</nav><!-- /sidebar slide-left -->
-
-	<div id="mask" class="mask"></div><!-- /mask -->
+		</div><!-- /splitlayout -->
+	</div><!-- /container -->
 
 	<script type="text/javascript" src="main.js"></script>
 </body>
