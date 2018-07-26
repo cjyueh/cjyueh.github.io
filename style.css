@@ -26,3 +26,78 @@ h6 {
 	font-family: 'Playfair Display', serif;
 	font-weight: 700;
 }
+
+.splitlayout {
+	position: relative;
+	overflow-x: hidden;
+	min-height: 100%;
+	width: 100%;
+}
+
+/* Intro sides */
+.side {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	-webkit-backface-visibility: hidden;
+}
+
+.open-left .side,
+.open-right .side {
+	cursor: default;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 499;
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.side-left .overlay {
+	background: rgba(0,0,0,0.7);
+}
+
+.side-right .overlay {
+	background: rgba(0,0,0,0.3);
+}
+
+.side-left {
+	left: 0;
+	outline: 1px solid #fff; /* avoid gap */
+}
+
+.side-left--image {
+	height: 100%;
+	background: url("images/home-ux.jpg") no-repeat top left;
+	background-size: cover;
+}
+
+.side-right {
+	position: relative;
+	right: -50%;
+	width: 65vw;
+	overflow: hidden;
+	outline: 1px solid #fff; /* avoid gap */
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+}
+
+.side-right--image {
+	position: absolute;
+	width: 120%;
+	height: 100%;
+	margin-left: -30%;
+	background: url("images/home-yoga.jpg") no-repeat bottom right;
+	background-size: cover;
+	-webkit-transform: skew(30deg);
+	-moz-transform: skew(30deg);
+	-o-transform: skew(30deg);
+}
