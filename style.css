@@ -11,6 +11,7 @@ html, body, .container {
   font-size: 14px;
   font-weight: 200;
   letter-spacing: .07em;
+  line-height: 1.4;
 }
 
 body {
@@ -69,12 +70,12 @@ h6 {
 p {
 	margin-bottom: .5em;
 	font-size: 1em;
-	line-height: 1.3;
+	line-height: 1.4;
 }
 
 li {
 	list-style: none;
-	line-height: 1.3;
+	line-height: 1.4;
 }
 
 a {
@@ -89,10 +90,6 @@ section {
 svg {
 	fill: #fff;
 }
-
-/*.container {
-	overflow: hidden;
-}*/
 
 .bg {
 	position: relative;
@@ -115,13 +112,12 @@ svg {
 
 .bg-left--image {
 	height: 100%;
-	background: url("images/home-ux.jpg") no-repeat top left;
+	background: url("images/ux.jpg") no-repeat top left;
 	background-size: cover;
 }
 
 .bg-right {
 	left: 50%;
-	/*right: -21%;*/
 	width: 70vw;
 	transform: skew(30deg);
 	-webkit-transform: skew(-30deg);
@@ -130,10 +126,10 @@ svg {
 }
 
 .bg-right--image {
-	width: 120%;
+	width: 140%;
 	height: 100%;
-	margin-left: -45%;
-	background: url("images/home-yoga.jpg") no-repeat bottom right;
+	margin-left: -69%;
+	background: url("images/yoga.jpg") no-repeat center right;
 	background-size: cover;
 	transform: skew(30deg);
 	-webkit-transform: skew(30deg);
@@ -145,12 +141,21 @@ svg {
 	position: absolute;
 	top: 0;
 	left: 0;
-	overflow-x: hidden;
+	overflow: hidden;
 	min-height: 100%;
 	width: 100%;
 }
 
 /* Intro sides */
+.intro {
+	position: absolute;
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(19, 128, 150, .75);
+}
+
 .side {
 	position: absolute;
 	top: 0;
@@ -165,17 +170,6 @@ svg {
 	cursor: default;
 }
 
-.overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 499;
-	visibility: hidden;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-}
-
 .side-left .overlay {
 	background: rgba(0,0,0,0.7);
 }
@@ -184,15 +178,9 @@ svg {
 	background: rgba(0,0,0,0.3);
 }
 
-.side-left {
-	left: 0;
-	background-color: rgba(19, 128, 150, .75);
-}
-
 .side-right {
 	width: 70vw;
 	left: 50%;
-	/*right: -21%;*/
 	transform: skew(30deg);
 	-webkit-transform: skew(-30deg);
 	-moz-transform: skew(-30deg);
@@ -226,20 +214,10 @@ svg {
 	cursor: pointer;
 }
 
-/*.page {
-	position: relative;
-	top: 0;
-	overflow: auto;
-	min-height: 100%;
-	width: 100%;
-	height: auto;
-	-webkit-backface-visibility: hidden;
-}*/
-
-.page-bg {
+.page {
 	position: absolute;
-	top: 0;
-	left: 0;
+  top: 0;
+  left: 0;
 	width: 100%;
 	height: 100%;
 }
@@ -272,6 +250,10 @@ svg {
 	height: 2em;
 }
 
+.page-inner--icons > a:first-child {
+	margin-top: .5em;
+}
+
 .page-inner--main {
 	display: inline-block;
 	vertical-align: top;
@@ -285,8 +267,9 @@ svg {
 	width: 49%
 }
 
-.page-right .page-bg {
-	background: url("images/home-ux.jpg") no-repeat top left;
+.page-right {
+	height: 100%;
+	background: url("images/ux.jpg") no-repeat top left;
 	background-size: cover;
 }
 
@@ -303,15 +286,15 @@ svg {
 .page-right .page-inner {
 	width: 70vw;
 	left: 50%;
-	/*right: -21%;*/
 }
 
 .page-right .page-inner .page-inner--content {
   left: 57%;
 }
 
-.page-left .page-bg {
-	background: url("images/home-yoga.jpg") no-repeat bottom right;
+.page-left {
+	height: 100%;
+	background: url("images/yoga.jpg") no-repeat center right;
 	background-size: cover;
 }
 
@@ -326,4 +309,39 @@ svg {
 
 .page-left .page-inner .page-inner--content {
   left: 95%;
+}
+
+.yoga {
+	transform: translateY(-100%);
+	transition: all .3s ease;
+}
+
+.home {
+	transform: translateY(0);
+	transition: all .3s ease;
+}
+
+.ux {
+	transform: translateY(100%);
+	transition: all .3s ease;
+}
+
+.position-1 {
+	transform: translateY(-200%);
+}
+
+.position-2 {
+	transform: translateY(-100%);
+}
+
+.show {
+	transform: translateY(0);
+}
+
+.position-4 {
+	transform: translateY(100%);
+}
+
+.position-5 {
+	transform: translateY(200%);
 }
