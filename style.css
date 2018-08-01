@@ -14,6 +14,7 @@ html, body, .container {
   line-height: 1.4;
 }
 
+/* for screen border */
 body {
 	overflow-y: scroll;
 	border-left: 10px solid #fff;
@@ -38,6 +39,7 @@ body:before {
 body:after {
 	bottom: 0;
 }
+/* ^ end screen border ^ */
 
 h1,
 h2,
@@ -91,53 +93,7 @@ svg {
 	fill: #fff;
 }
 
-.bg {
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-	width: 100%;
-}
-
-.bg-side {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
-.bg-left {
-	left: 0;
-}
-
-.bg-left--image {
-	height: 100%;
-	background: url("images/ux.jpg") no-repeat top left;
-	background-size: cover;
-}
-
-.bg-right {
-	left: 50%;
-	width: 70vw;
-	transform: skew(30deg);
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
-}
-
-.bg-right--image {
-	width: 140%;
-	height: 100%;
-	margin-left: -69%;
-	background: url("images/yoga.jpg") no-repeat center right;
-	background-size: cover;
-	transform: skew(30deg);
-	-webkit-transform: skew(30deg);
-	-moz-transform: skew(30deg);
-	-o-transform: skew(30deg);
-}
-
-.splitlayout {
+.container {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -146,14 +102,13 @@ svg {
 	width: 100%;
 }
 
-/* Intro sides */
+/* HOME */
 .intro {
 	position: absolute;
   top: 0;
   left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(19, 128, 150, .75);
 }
 
 .side {
@@ -162,30 +117,71 @@ svg {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	-webkit-backface-visibility: hidden;
 }
 
-.open-left .side,
-.open-right .side {
-	cursor: default;
+.side-left {
+	left: 0;
 }
 
-.side-left .overlay {
-	background: rgba(0,0,0,0.7);
+.side-left--bg {
+	height: 100%;
+	background: url("images/ux.jpg") no-repeat top left;
+	background-size: cover;
 }
 
-.side-right .overlay {
-	background: rgba(0,0,0,0.3);
+@media only screen and (orientation: landscape) {
+	.side-right {
+		left: 50%;
+		transform: skewX(30deg);
+		-webkit-transform: skewX(-30deg);
+		-moz-transform: skewX(-30deg);
+		-o-transform: skewX(-30deg);
+		outline: 1px solid #fff;
+	}
+
+	.side-right--bg {
+		width: 100%;
+		height: 100%;
+		margin-left: -50%;
+		background: url("images/yoga.jpg") no-repeat center right;
+		background-size: cover;
+		transform: skewX(30deg);
+		-webkit-transform: skewX(30deg);
+		-moz-transform: skewX(30deg);
+		-o-transform: skewX(30deg);
+	}
 }
 
-.side-right {
-	width: 70vw;
-	left: 50%;
-	transform: skew(30deg);
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
-	outline: 1px solid #fff;
+@media only screen and (orientation: portrait) {
+	.side-right {
+		top: 50%;
+		transform: skewY(-15deg);
+		-webkit-transform: skewY(-15deg);
+		-moz-transform: skewY(-15deg);
+		-o-transform: skewY(-15deg);
+		outline: 1px solid #fff;
+	}
+
+	.side-right--bg {
+		width: 100%;
+		height: 100%;
+		margin-top: -50%;
+		background: url("images/yoga.jpg") no-repeat bottom right;
+		background-size: cover;
+		transform: skewY(15deg);
+		-webkit-transform: skewY(15deg);
+		-moz-transform: skewY(15deg);
+		-o-transform: skewY(15deg);
+	}
+}
+
+.intro-bg {
+	position: absolute;
+  top: 0;
+  left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(19, 128, 150, .75);
 }
 
 .intro-center {
@@ -203,10 +199,24 @@ svg {
 
 .intro-links {
 	font-family: 'Open Sans', sans-serif;
-  font-size: 2.25em;
-  font-weight: 300;
-  letter-spacing: .025em;
+	font-size: 2.25em;
+	font-weight: 300;
+	letter-spacing: .025em;
 	color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+	.intro-center {
+		width: 12em;
+	}
+
+	.intro-links {
+		font-size: 2em;
+	}
+
+	.intro-links--pipe {
+		display: none;
+	}
 }
 
 .intro-links--left,
@@ -214,6 +224,7 @@ svg {
 	cursor: pointer;
 }
 
+/* PAGES (general) */
 .page {
 	position: absolute;
   top: 0;
@@ -230,35 +241,34 @@ svg {
 	overflow: hidden;
 	background-color: rgba(19, 128, 150, .75);
 	color: #fff;
-	transform: skew(-30deg);
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
-	outline: 1px solid #fff;
+	/*outline: 1px solid #fff;*/
+}
+
+.page-inner--content {
+	position: relative;
+	max-width: 55%;
 }
 
 .page-inner--icons {
 	display: inline-block;
 	vertical-align: top;
-	width: 2em;
+	width: 1.75em;
 	text-align: center;
 }
 
 .page-inner--icons > a {
 	display: block;
 	margin-bottom: 1.25em;
-	height: 2em;
+	height: 1.75em;
 }
 
 .page-inner--icons > a:first-child {
-	margin-top: .5em;
+	margin-top: .75em;
 }
 
 .page-inner--main {
 	display: inline-block;
 	vertical-align: top;
-	width: 24em;
-	margin-left: 2em;
 }
 
 .page-inner--main-half {
@@ -267,50 +277,188 @@ svg {
 	width: 49%
 }
 
+
+@media only screen and (orientation: landscape) {
+	.page-inner {
+		transform: skewX(-30deg);
+		-webkit-transform: skewX(-30deg);
+		-moz-transform: skewX(-30deg);
+		-o-transform: skewX(-30deg);
+	}
+
+	.page-inner--content {
+		top: 50%;
+		left: 50%;
+		transform: skewX(30deg) translate(-50%, -50%);
+		-webkit-transform: skewX(30deg) translate(-50%, -50%);
+		-moz-transform: skewX(30deg) translate(-50%, -50%);
+		-o-transform: skewX(30deg) translate(-50%, -50%);
+	}
+
+	.page-inner--main {
+		width: 50%;
+		max-width: 24em;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	.page-inner {
+		transform: skewY(-15deg);
+		-webkit-transform: skewY(-15deg);
+		-moz-transform: skewY(-15deg);
+		-o-transform: skewY(-15deg);
+	}
+
+	.page-inner--main {
+		width: 80%;
+	}
+}
+
+/* UX PAGE */
 .page-right {
 	height: 100%;
 	background: url("images/ux.jpg") no-repeat top left;
 	background-size: cover;
 }
 
-.page-inner--content {
-	position: relative;
-	top: 50%;
-	transform: skew(30deg) translate(-50%, -50%);
-	-webkit-transform: skew(30deg) translate(-50%, -50%);
-	-moz-transform: skew(30deg) translate(-50%, -50%);
-	-o-transform: skew(30deg) translate(-50%, -50%);
-	max-width: 55%;
-}
-
 .page-right .page-inner {
-	width: 70vw;
-	left: 50%;
+	width: 100%;
 }
 
-.page-right .page-inner .page-inner--content {
-  left: 57%;
+.page-right .page-inner--icons,
+.page-right .page-inner-main {
+	vertical-align: bottom;
 }
 
+@media only screen and (orientation: landscape) {
+	.page-right .page-inner {
+		left: 50%;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	.page-right .page-inner {
+		top: 50%;
+	}
+
+	.page-right .page-inner--content {
+		top: 20%;
+		left: 50%;
+		transform: skewY(15deg) translate(-50%, -20%);
+		-webkit-transform: skewY(15deg) translate(-50%, -20%);
+		-moz-transform: skewY(15deg) translate(-50%, -20%);
+		-o-transform: skewY(15deg) translate(-50%, -20%);
+	}
+}
+
+.page-right .page-inner--main {
+	margin-left: 2em;
+}
+
+.page-right .page-inner--content {
+  left: 50%;
+}
+
+/* YOGA PAGE */
 .page-left {
 	height: 100%;
 	background: url("images/yoga.jpg") no-repeat center right;
 	background-size: cover;
 }
 
-.page-left .page-inner {
-	left: -50%;
-}
-
-.page-left .page-inner .page-inner--main {
+.page-left .page-inner--main {
 	margin-right: 2em;
+	margin-left: 5%;
 	text-align: right;
 }
 
-.page-left .page-inner .page-inner--content {
-  left: 95%;
+@media only screen and (orientation: landscape) {
+	.page-left .page-inner {
+		left: -50%;
+	}
+
+	.page-left .page-inner--content {
+	  left: 95%;
+	}
 }
 
+@media only screen and (orientation: portrait) {
+	.page-left .page-inner {
+		top: -50%;
+	}
+
+	.page-left .page-inner--content {
+		top: 70%;
+		left: 50%;
+		transform: skewY(15deg) translate(-50%, -25%);
+		-webkit-transform: skewY(15deg) translate(-50%, -25%);
+		-moz-transform: skewY(15deg) translate(-50%, -25%);
+		-o-transform: skewY(15deg) translate(-50%, -25%);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.scrollable {
+		max-height: 10em;
+		overflow-y: scroll;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: 1.75em;
+	}
+
+	.mobile .page-inner {
+		top: 5%;
+		left: 10%;
+		transform: skewX(0);
+		-webkit-transform: skewX(0);
+		-moz-transform: skewX(0);
+		-o-transform: skewX(0);
+		width: 80%;
+		height: 90%;
+	}
+
+	.mobile .page-inner--content {
+		top: 0;
+		left: 0;
+		transform: skewX(0) translate(0, 0);
+		-webkit-transform: skewX(0) translate(0, 0);
+		-moz-transform: skewX(0) translate(0, 0);
+		-o-transform: skewX(0) translate(0, 0);
+		margin: 2em;
+		max-width: 100%;
+		height: 100%;
+	}
+
+	.mobile .page-inner--main {
+		margin: 0;
+		width: 100%;
+		max-height: 80%;
+		text-align: left;
+		overflow-y: scroll;
+	}
+
+	.mobile .page-inner--main-half {
+		width: 100%;
+	}
+
+	.mobile .page-inner--icons {
+		position: absolute;
+		bottom: 10%;
+		display: block;
+		width: 100%;
+	}
+
+	.mobile .page-inner--icons > a {
+		display: inline-block;
+		margin: 0 .5em;
+		width: 1.25em;
+	}
+}
+
+/* for scroll effect (see main.js) */
 .yoga {
 	transform: translateY(-100%);
 	transition: all .3s ease;
