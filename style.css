@@ -205,13 +205,13 @@ svg {
 	color: #fff;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 812px) {
 	.intro-center {
 		width: 12em;
 	}
 
 	.intro-links {
-		font-size: 2em;
+		font-size: 1.75em;
 	}
 
 	.intro-links--pipe {
@@ -397,31 +397,27 @@ svg {
 	}
 }
 
-@media only screen and (max-width: 768px) {
-	.scrollable {
-		max-height: 10em;
-		overflow-y: scroll;
-	}
-}
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 812px) {
 	h1 {
-		font-size: 1.75em;
+		font-size: 1.5em;
 	}
 
 	.mobile .page-inner {
-		top: 5%;
+		top: 10%;
 		left: 10%;
 		transform: skewX(0);
 		-webkit-transform: skewX(0);
 		-moz-transform: skewX(0);
 		-o-transform: skewX(0);
 		width: 80%;
-		height: 90%;
+		height: 80%;
 	}
 
 	.mobile .page-inner--content {
+		position: absolute;
 		top: 0;
+		right: 0;
+		bottom: 0;
 		left: 0;
 		transform: skewX(0) translate(0, 0);
 		-webkit-transform: skewX(0) translate(0, 0);
@@ -429,12 +425,12 @@ svg {
 		-o-transform: skewX(0) translate(0, 0);
 		margin: 2em;
 		max-width: 100%;
-		height: 100%;
 	}
 
 	.mobile .page-inner--main {
 		margin: 0;
 		width: 100%;
+		max-width: 100%;
 		max-height: 80%;
 		text-align: left;
 		overflow-y: scroll;
@@ -446,7 +442,7 @@ svg {
 
 	.mobile .page-inner--icons {
 		position: absolute;
-		bottom: 10%;
+		bottom: 0;
 		display: block;
 		width: 100%;
 	}
